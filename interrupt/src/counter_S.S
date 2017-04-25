@@ -1,3 +1,16 @@
+/*
+Kristoffer
+Sätter pin att vara output
+*(gpio_addr + (4 * (GPIO_NR / 10 ))) |= (1 << (((GPIO_NR) % 10) * 3));
+
+Farid
+Sätta pin att vara input
+*(gpio_addr + (4* ( GPIO_NR / 10))) &= ~(7<< ((GPIO_NR % 10) * 3));
+
+Peter
+Sida 4
+*/
+
 .data
 /*
 ** Variabler här
